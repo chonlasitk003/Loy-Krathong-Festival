@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.BASE_URL || '/Loy-Krathong-Festival/',
   plugins: [react(), tailwindcss()],
   server: {
     port: 3000,
